@@ -11,16 +11,12 @@
 <body>
 
   <h1>Image Gallery</h1>
-
-  <!-- Filter Buttons -->
   <div class="filters">
     <button data-category="all">All</button>
     <button data-category="nature">Nature</button>
     <button data-category="architecture">Architecture</button>
     <button data-category="animals">Animals</button>
   </div>
-
-  <!-- Gallery -->
   <div class="gallery">
     <div class="image" data-category="nature">
       <img src="C:\Users\HARINI\Downloads\TOC\nature3.jpeg" alt="Nature">
@@ -34,10 +30,8 @@
     <div class="image" data-category="nature">
       <img src="C:\Users\HARINI\Downloads\TOC\forest.jpg" alt="Nature">
     </div>
-    <!-- Add more images similarly -->
   </div>
 
-  <!-- Lightbox -->
   <div id="lightbox" class="lightbox hidden">
     <span class="close">&times;</span>
     <img id="lightbox-img" src="" alt="">
@@ -107,7 +101,6 @@ h1 {
   filter: brightness(85%);
 }
 
-/* Lightbox */
 .lightbox {
   position: fixed;
   top: 0;
@@ -156,7 +149,6 @@ h1 {
   display: none;
 }
 
-/* Responsive */
 @media (max-width: 600px) {
   .lightbox-controls span {
     font-size: 30px;
